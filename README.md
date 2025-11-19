@@ -108,6 +108,30 @@ agent.print_status()
 ```
 output:
 <img width="789" height="162" alt="image" src="https://github.com/user-attachments/assets/b155faac-7c0e-457d-a432-fba5b0ee1241" />
+### PROGRAM
+```
+import random
+
+while True:
+    heart = random.randint(60,150)
+    bp = random.randint(90,160)
+    temp = round(random.uniform(36,38.5),1)
+
+    print(f"HR:{heart}  BP:{bp}  Temp:{temp}")
+
+    if heart > 120:
+        print("High heart rate!")
+    elif bp >= 140:
+        print("High blood pressure!")
+    elif temp >= 38:
+        print("High temperature!")
+    else:
+        print("Stable. Monitoring stopped.")
+        break
+```
+
+### OUTPUT
+<img width="482" height="406" alt="image" src="https://github.com/user-attachments/assets/b0d01dea-8ff2-4308-a75f-b5eaad3997be" />
 
 RESULT:
 Thus the Developing AI Agent with PEAS Description was implemented using python programming.
